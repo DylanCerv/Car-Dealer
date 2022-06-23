@@ -77,18 +77,18 @@ header{
     }
 }
 
-@media (min-width: 774px){
+/* @media (min-width: 774px){
     .list-vehiculo .grid-v{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
     }
-}
+} */
 
 @media (min-width: 1027px){
     .list-vehiculo .grid-v{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 }
