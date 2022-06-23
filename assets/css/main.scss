@@ -1,0 +1,91 @@
+:root {
+  ---Color_Black__18-29-33-13:#121D21;
+  ---Color_Gray__57-95-107-42:#395F6B;
+  ---Color_Celest_1__124-207-235-92:#7CCFEB;
+  ---Color_Celest_2__31-218-147-97:#83DAF7;
+  ---Color_Celest_3__119-198-224-88:#77C6E0;
+  --button_color:#ff6834;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  box-shadow: 0 0 5px 5px rgb(124, 124, 124);
+}
+
+.container-nav {
+  max-width: 100%;
+}
+
+.bg-dark {
+  background-color: var(---Color_Black__18-29-33-13);
+}
+
+.padding-costados {
+  padding: 15px 10%;
+}
+
+.list-vehiculo {
+  margin: 2% 9%;
+
+  img {
+    border-radius: 28px 28px 5px 5px;
+  }
+}
+
+.container-list-vehiculo {
+  background-color: #fff;
+  border-radius: 30px;
+  border: solid 2px #fff;
+  box-shadow: 0 0 5px 2px rgb(124, 124, 124);
+  padding: 0;
+  margin: 5% 2px 2rem 2px;
+
+  &:hover {
+    border-color: var(--button_color);
+    z-index: 100;
+    color: var(--button_color);
+  }
+  .button-d:hover {
+    background-color: var(--button_color);
+    border-color: var(--button_color);
+  }
+}
+
+/********************
+*
+* MEIDA QUERIES
+*
+********************/
+
+.list-vehiculo .grid-v {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+@media (min-width: 480px) {
+  .list-vehiculo .grid-v {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+}
+
+@media (min-width: 774px) {
+  .list-vehiculo .grid-v {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+}
+
+@media (min-width: 1027px) {
+  .list-vehiculo .grid-v {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+}
